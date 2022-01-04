@@ -1,0 +1,29 @@
+.basegraphic {
+  .basegraphic_title {
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .basegraphic_desc {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #aaa;
+  }
+
+  .btn_graphic {
+    background-color: #021c4b;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    width: 165px;
+  }
+
+  .basegraphic_image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+}

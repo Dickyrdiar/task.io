@@ -1,0 +1,38 @@
+$color1: #ffffff;
+
+.navbar {
+  background-color: $color1 !important;
+  position: fixed;
+  width: 100%;
+
+  .navbar_menu {
+    font-size: 15px;
+    font-weight: 700;
+    grid-column: auto;
+  }
+
+  .navbar_menu--active {
+    color: #6754e2 !important;
+    // transform: scale(1.1);
+    font-weight: 10px;
+  }
+
+  .navbar_menu:hover {
+    color: #6754e2;
+    // transform: scale(1.1);
+  }
+
+  .btn_navbar_login {
+    background-color: #6754e2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .btn_navbar_signup {
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00008c;
+    border: solid 1px white;
+  }
+}

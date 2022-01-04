@@ -1,0 +1,18 @@
+.basefooter {
+  text-align: center;
+  background-color: #021c4b;
+  color: white;
+
+  .footer_title {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(247, 247, 247);
+  }
+
+  .footer_list {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #aaa;
+  }
+}

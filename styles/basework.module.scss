@@ -1,0 +1,21 @@
+.basework {
+  .basework_title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .basework_desc {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #aaa;
+  }
+
+  .basework_image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+}
