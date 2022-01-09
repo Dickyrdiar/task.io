@@ -1,3 +1,46 @@
 .baselogin {
   margin: 12px, 12px, 12px, 12px;
+  .signup_link {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #aaa;
+  }
+
+  .link {
+    color: #00008c;
+  }
+
+  .baseform_title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .baseleft_login {
+    background-color: #0d2244;
+    color: white;
+    height: 39rem;
+  }
+
+  .baseleft_login_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    // text-align: 'center';
+  }
+
+  .base_form_login {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #aaa;
+  }
+
+  .btn_login {
+    background-color: #021c4b;
+    font-size: 18px;
+    // font-weight: bold;
+    height: 50px;
+    width: 250px;
+  }
 }
