@@ -3,14 +3,28 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import style from '../styles/login_style/baselogin.module.scss'
 
 const Login = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-  const handleClickLogin = () => {
-    if (setEmail === 'user@task.io') {
-      window.location.assign('home')
-    } 
+  const handleEmail = (e) => {
+    setEmail(e.target.value)
   }
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value)
+  }
+
+  const handleClickLogin = (e) => {
+    e.preventDefault()
+    if (email === "task.io@mail" && password === "8karakter")  {
+      window.location.assign('/home')
+      console.log("berahsil horee")
+    } else {
+      alert('email or password failed')
+    }
+  }
+
+  console.log('email', email)
 
   return (
     <div className={style.baselogin}>
@@ -30,17 +44,17 @@ const Login = () => {
             <Col md={7} ml={5} pl={5}>
               <Container style={{ padding: "2rem" }}>
                 <Form>
-                  <Form.Group className="mb-3" controlId="formbaseEmail">
+                  <Form.Group className="mb-3">
                     <Form.Label className={style.base_form_login}>Email</Form.Label>
-                    <Form.Control type="email" placeholder="enter email" /> 
+                    <Form.Control value={email} type="email" placeholder="enter email" onChange={handleEmail}/> 
                   </Form.Group>
 
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Group className="mb-3" >
                     <Form.Label className={style.base_form_login}>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control value={password} type="password" placeholder="Password" onChange={handlePassword} />
                   </Form.Group>
 
-                  <Button className={style.btn_login} style={{ 
+                  <Button onClick={handleClickLogin} className={style.btn_login} style={{ 
                     marginTop: "1rem",
                     borderRadius: "6px"
                   }}>Login</Button>
