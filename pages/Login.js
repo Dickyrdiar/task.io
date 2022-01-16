@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import style from '../styles/login_style/baselogin.module.scss'
+import PopupLogin from './elements/popup'
 
 const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [showPopup, setShowPopup] = useState(false)
 
   const handleEmail = (e) => {
     setEmail(e.target.value)
@@ -20,10 +22,11 @@ const Login = () => {
       window.location.assign('/home')
       console.log("berahsil horee")
     } else {
-      alert('email or password failed')
+      setShowPopup(true)
     }
   }
 
+  console.log('popup', showPopup)
   console.log('email', email)
 
   return (
@@ -79,7 +82,8 @@ const Login = () => {
             </Col>
           </Container>
         </Col>
-      </Row>    
+      </Row>
+      <PopupLogin open={showPopup} onClose={()=> setShowPopup(false)} />
     </div>
   )
 }
