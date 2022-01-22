@@ -3,7 +3,7 @@ import SideBar from './elements/sidebar'
 
 const baseHome = () => {
   return (
-    <SideBar />
+    <SideBar projectName="Task.io" />
   )
 }
 

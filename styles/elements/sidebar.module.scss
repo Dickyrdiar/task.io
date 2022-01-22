@@ -1,19 +1,20 @@
 .sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background: #ffff;
+  min-width: 220px;
+  max-width: 220px;
+  height: 730px;
+  background: rgb(255, 255, 255);
   color: #adb5bd;
-  // margin-left: -250px;
+  border: 1px solid #e5e7eb;
 
   .sidebar_header {
     background: #ffff;
     color: #adb5bd;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
   }
 
-  .nav_item {
-    color: #adb5bd;
-    font-weight: 300;
-  }
+  // .nav_item {
+  //   color: #adb5bd;
+  //   font-weight: 300;
+  // }
 }
