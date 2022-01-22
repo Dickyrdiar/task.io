@@ -1,21 +1,33 @@
 import React, { useState } from 'react'
+import style from '../../../styles/elements/sidebar.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { Nav, Button } from 'react-bootstrap'
-import classNames from "classnames"
+import { Nav, Container } from 'react-bootstrap'
+import sidebarMenu from './data'
 
 const SideBar = () => {
+  console.log('sidebar', sidebarMenu)
+
   return (
-    <div className={classNames("sidebar", { "is-open": open })}>
-      <div className="sidebar-header">
-        <Button 
-          variant="link"
-          onClick={toggle}
-          style={{ color: "#fff" }}
-          className="mt-4"
-        >
-          <FontAwesomeIcon icon={faTimes} pull="right" size="xs" />
-        </Button>
-      </div>
+    <div className={style.sidebar}>
+      <Container>
+        <div className={style.sidebar_header}>
+          <p className="pt-3 mt-3">sidebar header</p>
+        </div>
+
+        <div className={style.nav_item}>
+          <Nav className="flex-column pt-2">
+            {sidebarMenu.map((item) => (
+              <Nav.Item>
+                <Nav.Link href={item.path}>
+                  {/* <FontAwesomeIcon icon={item.icon} /> */}
+                  {item.icon}
+                  {item.title}
+                </Nav.Link>
+              </Nav.Item>
+            ))}
+          </Nav>
+        </div>
+      </Container>
     </div>
   )
 }

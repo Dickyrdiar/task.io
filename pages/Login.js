@@ -49,7 +49,7 @@ const Login = () => {
                 <Form>
                   <Form.Group className="mb-3">
                     <Form.Label className={style.base_form_login}>Email</Form.Label>
-                    <Form.Control value={email} type="email" placeholder="enter email" onChange={handleEmail}/> 
+                    <Form.Control value={email} type="email" placeholder="Email" onChange={handleEmail}/> 
                   </Form.Group>
 
                   <Form.Group className="mb-3" >
