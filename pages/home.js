@@ -1,9 +1,21 @@
 import React from 'react'
+import HeaderHome from './elements/headerHome'
 import SideBar from './elements/sidebar'
+import style from '../styles/home/basehome.module.scss'
 
-const baseHome = () => {
+const baseHome = ({children}) => {
   return (
-    <SideBar projectName="Task.io" />
+    <>
+     <div className={style.borderhome}>
+      <HeaderHome />
+      <SideBar projectName="Task.io" />
+      <main>
+        <div>
+          {children}
+        </div>
+      </main>
+     </div>
+    </>
   )
 }
 

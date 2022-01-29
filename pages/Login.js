@@ -83,7 +83,7 @@ const Login = () => {
           </Container>
         </Col>
       </Row>
-      <PopupLogin open={showPopup} onClose={()=> setShowPopup(false)} />
+      <PopupLogin messageTitle="Login gagal" open={showPopup} onClose={()=> setShowPopup(false)} />
     </div>
   )
 }

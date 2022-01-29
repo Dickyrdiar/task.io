@@ -7,6 +7,7 @@ const BaseFooter = () => {
     <div className={style.basefooter}>
       <footer className="page-footer font-small blue pt-4 mt-4">
         <div className="container-fluid text-right">
+          <div className={style.footer}>
             <div className="row">
                 <div className="col-md-3 mt-md-0 mt-5">
                     <h5 className={style.footer_title}>Footer Content</h5>
@@ -32,8 +33,8 @@ const BaseFooter = () => {
                         <li><a href="#!">Security</a></li>
                     </ul>
                 </div>
-
-            </div>
+              </div>
+          </div>
         </div>
 
         <div className="footer-copyright text-center py-3">© 2020 Task.io
