@@ -1,10 +1,15 @@
 .sidebar {
   min-width: 220px;
   max-width: 220px;
-  height: 730px;
+  height: 630px;
   background: rgb(255, 255, 255);
-  color: #adb5bd;
+  color: #021c4b;
   border: 1px solid #e5e7eb;
+  position: fixed;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 
   .sidebar_header {
     background: #ffff;
